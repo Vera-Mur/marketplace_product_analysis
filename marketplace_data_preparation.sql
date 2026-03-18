@@ -3,6 +3,11 @@
 -- Период: 2024 год
 -- Источник: pa_graduate
 -- ============================================================
+--
+-- Примечание: таблица Campaign_costs (маркетинговые расходы
+-- по каналам и месяцам) предоставлена в готовом виде и не
+-- требует отдельного запроса.
+-- ============================================================
 
 
 -- ------------------------------------------------------------
@@ -24,8 +29,7 @@ SELECT
 FROM pa_graduate.Users AS us
 WHERE registration_date >= '2024-01-01'
   AND registration_date  < '2025-01-01'
-ORDER BY registration_date
-LIMIT 100;
+ORDER BY registration_date;
 
 
 -- ------------------------------------------------------------
@@ -48,8 +52,7 @@ FROM pa_graduate.Events AS ev
 LEFT JOIN pa_graduate.Product_dict AS pr ON pr.product_id = ev.product_id
 WHERE timestamp >= '2024-01-01'
   AND timestamp  < '2025-01-01'
-ORDER BY event_date
-LIMIT 100;
+ORDER BY event_date;
 
 
 -- ------------------------------------------------------------
@@ -74,5 +77,4 @@ FROM pa_graduate.Orders AS o
 LEFT JOIN pa_graduate.Product_dict AS pr ON pr.product_id = o.product_id
 WHERE order_date >= '2024-01-01'
   AND order_date  < '2025-01-01'
-ORDER BY order_date
-LIMIT 100;
+ORDER BY order_date;
