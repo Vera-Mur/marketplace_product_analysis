@@ -25,8 +25,6 @@
 ## Стек
 
 Python, pandas, numpy, scipy, statsmodels, matplotlib, seaborn
-Открыть ноутбук
 
-Python, pandas, numpy, scipy, statsmodels, matplotlib, seaborn
 
 **[Открыть ноутбук](marketplace_product_analysis.ipynb)**
